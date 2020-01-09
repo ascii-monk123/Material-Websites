@@ -1,0 +1,17 @@
+.slider .btn {
+  margin-top: 25px;
+}
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: 2px solid #f4f4f4 !important;
+  border-radius: 7px !important;
+}
+.section-search .input-field {
+  margin-top: 50px !important;
+}
+.section-icons {
+  padding-top: 60px !important;
+}
