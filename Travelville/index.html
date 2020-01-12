@@ -21,7 +21,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body id="home" class="scrollspy">
     <div class="navbar">
       <nav class="teal lighten-3">
         <div class="nav-wrapper">
@@ -123,7 +123,7 @@
     </section>
 
     <!--section  search-->
-    <section class="section section-search teal lighten-3 white-text center">
+    <section class="section section-search teal lighten-3 white-text center scrollspy" id="search">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -172,7 +172,7 @@
 
 
     <!--the popular places section-->
-    <section class="section section-popular">
+    <section class="section section-popular scrollspy" id="popular">
       <div class="container">
         <div class="row">
           <h4 class="center" style="margin-bottom:40px;"><span class="teal-text">Popular </span>Places</h4>
@@ -246,7 +246,7 @@
 
 
   <!--section images-->
-  <section class="section section-gallery">
+  <section class="section section-gallery scrollspy" id="gallery">
     <div class="container">
       <h4 class="center" style="margin:30px 0 70px 0">
         <span class="teal-text">Photo</span> Gallery
@@ -298,6 +298,65 @@
     </div>
   </section>
 
+
+
+  <!--section contact-->
+  <section class="section section-contact scrollspy" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+        <div class="card-panel teal white-text center">
+          <i class="material-icons medium">email</i>
+          <h5>Contact Us for booking</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, delectus.</p>
+        </div>
+        <ul class="collection with-header">
+          <li class="collection-header">
+            <h4>Location</h4>
+          </li>
+          <li class="collection-item">
+            Travelville Agency
+          </li>
+          <li class="collection-item">
+            555 beach rd, Suite 33
+          </li>
+          <li class="collection-item">
+            Miami ,Fl 55555
+          </li>
+        </ul>
+        </div>
+ <!--contact form-->
+        <div class="col s12 m6">
+           <div class="card-panel grey lighten-4">
+             <h5>Please fill out this form</h5>
+             <div class="input-field">
+               <input type="text" placeholder="Name" id="name">
+               <label for="name">Name</label>
+             </div>
+             <div class="input-field">
+              <input type="email" placeholder="e-mail" id="emai">
+              <label for="email">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" placeholder="Phone" id="phone">
+              <label for="phone">Name</label>
+            </div>
+            <div class="input-field">
+            <textarea placeholder="Enter Message" id="message"  class="materialize-textarea"></textarea>
+            <label for="message">Name</label>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="section teal lighten-2 white-text center">
+    <p class="flow-text">Travelville &copy; 2020</p>
+  </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -330,6 +389,9 @@
             Bahamas: null
           }
         });
+
+        //init scrollspy
+        $('.scrollspy').scrollSpy();
       });
     </script>
   </body>
