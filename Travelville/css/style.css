@@ -15,3 +15,7 @@
 .section-icons {
   padding-top: 60px !important;
 }
+.section-follow .fa-4x {
+  margin: 10px 10px;
+  color: #fff;
+}
