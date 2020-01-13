@@ -1,0 +1,15 @@
+header.main-header {
+  background: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+header .showcase {
+  padding-top: 110px;
+}
+
+.active__link {
+  color: #d847f1;
+  font-weight: bold;
+}
