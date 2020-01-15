@@ -35,7 +35,7 @@
                 <li><a href="index.html" class="active__link">Home</a></li>
                 <li><a href="solutions.html">Solutions</a></li>
                 <li><a href="signup.html">Signup</a></li>
-                <li><a class="btn purple">Login</a></li>
+                <li><a class="btn purple modal-trigger" href="#login-modal">Login</a></li>
                 <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -200,7 +200,7 @@
               <div class="carousel-item" href="#one!">
                 <h2>Testimonial 1</h2>
                 <p class="flow-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro commodi in blanditiis ratione numquam quasi tempore saepe? Delectus quo possimus ratione placeat inventore eos nulla corporis natus excepturi fugit."
-                  <em>- John Doe from Microsystems</em>
+                  <p><em>- John Doe from Microsystems</em></p>
                 </p>
                  <div class="carousel-fixed-item center hide-on-small-and-down">
                    <a href="#" class="btn grey">Read more</a>
@@ -209,7 +209,7 @@
               <div class="carousel-item" href="#one!">
                 <h2>Testimonial 2</h2>
                 <p class="flow-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro commodi in blanditiis ratione numquam quasi tempore saepe? Delectus quo possimus ratione placeat inventore eos nulla corporis natus excepturi fugit."
-                  <em>- Mike Smith from Edge Inc.</em>
+                  <p><em>- Mike Smith from Edge Inc.</em></p>
                 </p>
                  <div class="carousel-fixed-item center hide-on-small-and-down">
                    <a href="#" class="btn grey">Read more</a>
@@ -218,7 +218,7 @@
               <div class="carousel-item" href="#one!">
                 <h2>Testimonial 3</h2>
                 <p class="flow-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro commodi in blanditiis ratione numquam quasi tempore saepe? Delectus quo possimus ratione placeat inventore eos nulla corporis natus excepturi fugit."
-                  <em>- Karen Williams from Tech Soft</em>
+                  <p><em>- Karen Williams from Tech Soft</em></p>
                 </p>
                  <div class="carousel-fixed-item center hide-on-small-and-down">
                    <a href="#" class="btn grey">Read more</a>
@@ -229,6 +229,57 @@
         </div>
       </div>
     </section>
+
+    <!--footer-->
+    
+    <footer class="page-footer deep-purple lighten-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, iusto?</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">About Us</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="solutions.html">Solutions</a></li>
+              <li><a class="grey-text text-lighten-3" href="signup.html">Sign Up</a></li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright deep-purple lighten-1">
+        <div class="container">
+        Quazzu &copy; 2020
+        <a class="grey-text text-lighten-4 right" href="#!">Terms and Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--login modal-->
+    <div class="modal" id="login-modal">
+      <div class="modal-content">
+        <h4>Account Login</h4>
+        <p>Login to access your account dashboard</p>
+        <form >
+          <div class="input-field">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password">
+            <label for="password">Password</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a class="modal-action modal-close btn grey" href="#!"><i class="fa fa-sync" style="margin-right:5px; display:inline-block"></i>Reset password</a>
+        <a class="modal-action modal-close btn purple" href="#!"><i class="fa fa-lock"style="margin-right:5px; display:inline-block"></i>Login</a>
+      </div>
+      
+    </div>
     <!--the script tags-->
 
     <script
@@ -241,6 +292,8 @@
     $('.sidenav').sidenav();
     //adding the carousel slider
     $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+    $('.modal').modal();
     </script>
   </body>
 </html>
