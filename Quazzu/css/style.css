@@ -76,6 +76,13 @@ header.main-header-inner {
   background-color: rgb(106, 27, 154, 0.7) !important;
 }
 
+/*sign up page*/
+.btn-extend {
+  display: block;
+  width: 100%;
+  margin-top: 35px;
+}
+
 @media (max-width: 500px) {
   .section-developers,
   .section-podcast {
