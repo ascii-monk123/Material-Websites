@@ -59,6 +59,23 @@ section.section-icon-boxes {
   font-size: 20px !important;
 }
 
+/*solutions page*/
+
+header.main-header-inner {
+  background: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  color: #fff;
+}
+.main-header-inner .showcase {
+  padding-top: 50px;
+}
+
+.tabs .indicator {
+  background-color: rgb(106, 27, 154, 0.7) !important;
+}
+
 @media (max-width: 500px) {
   .section-developers,
   .section-podcast {
