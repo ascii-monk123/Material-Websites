@@ -3,6 +3,9 @@ const time = document.getElementById('time'),
   greeting = document.getElementById('greeting'),
   name = document.getElementById('name'),
   focus = document.getElementById('focus');
+
+//SHOWAMPM
+const showAmPm = true;
 //add zeros
 const addZeros = num => {
   return (parseInt(num, 10) < 10 ? '0' : '') + num;
@@ -21,7 +24,7 @@ const showTime = () => {
   //output the time
   time.innerHTML = `${addZeros(hours)}<span>:</span>${addZeros(
     minute
-  )}<span>:</span>${addZeros(second)}`;
+  )}<span>:</span>${addZeros(second)} ${showAmPm === true ? amPm : ''}`;
   setTimeout(() => {
     showTime();
   }, 1000);
@@ -84,9 +87,24 @@ const setName = e => {
     if (e.keyCode == 13) {
       e.preventDefault();
       localStorage.setItem('name', e.target.innerText);
+      name.blur(); //blurs the cursor from the text area
     }
   } else {
     localStorage.setItem('name', e.target.innerText);
+  }
+};
+
+//set focus
+const setFocus = e => {
+  if (e.type === 'keypress') {
+    //make sure enter is pressed
+    if (e.keyCode == 13) {
+      e.preventDefault();
+      localStorage.setItem('focus', e.target.innerText);
+      focus.blur(); //blurs the cursor from the text area
+    }
+  } else {
+    localStorage.setItem('focus', e.target.innerText);
   }
 };
 
@@ -100,7 +118,10 @@ const getFocus = () => {
 };
 
 name.addEventListener('keypress', setName);
-name.addEventListener('blur', setName);
+name.addEventListener('blur', setName); //as soon as we click somwhere else then the text area
+
+focus.addEventListener('keypress', setFocus);
+focus.addEventListener('blur', setFocus); //as soon as we click somwhere else then the text area
 
 //run showtime
 showTime();
