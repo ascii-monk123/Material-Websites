@@ -58,5 +58,12 @@ body li {
 
 .navbar__link {
   margin-right: 1rem;
+  font-size: 1.3rem;
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+.navbar__link:hover {
+  border-bottom: 1px solid #000;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,9 @@
 //the link imports
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
+//the sass variables
+$color-black: #000;
+$color-white: #fff;
 //root reset
 * {
   &::before,
@@ -46,5 +49,11 @@ body {
   }
   &__link {
     margin-right: 1rem;
+    font-size: 1.3rem;
+    color: $color-black;
+    padding-bottom: 0.5rem;
+    &:hover {
+      border-bottom: 1px solid $color-black;
+    }
   }
 }
