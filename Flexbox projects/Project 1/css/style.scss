@@ -4,8 +4,46 @@
 //the sass variables
 $color-black: #000;
 $color-white: #fff;
+$color-black-light: rgba(0, 0, 0, 0.712);
+$color-green: #2ecc71;
+$color-green-dark: #009432;
+$color-primary-dark: rgba(9, 116, 165, 0.924);
+$color-primary: rgb(0, 174, 255);
+//the buttons
+.btn {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  margin: 0.2rem;
+  &__lg {
+    width: 10rem;
+  }
+  &__green {
+    background: $color-green;
+    color: #fff;
+    border: 1px solid $color-green;
+    transition: all 0.5s;
+    &:hover {
+      background: $color-green-dark;
+      border: 1px solid $color-green-dark;
+    }
+  }
+  &__primary {
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    transition: all 0.5s;
+    color: #fff;
+    &:hover {
+      background: $color-primary-dark;
+      border: 1px solid $color-primary-dark;
+    }
+  }
+}
 //root reset
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   &::before,
   &::after {
     padding: 0;
@@ -34,18 +72,19 @@ body {
   &__logo {
     display: flex;
     justify-content: flex-start;
-    height: 6rem;
-    width: 15rem;
+    height: 5rem;
+    width: 10rem;
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
   &__links {
     justify-content: flex-end;
     display: flex;
     flex: 1;
-    padding-top: 0;
+    padding-top: 1.4rem;
   }
   &__link {
     margin-right: 1rem;
@@ -56,4 +95,29 @@ body {
       border-bottom: 1px solid $color-black;
     }
   }
+}
+
+.hero__img {
+  color: $color-white;
+  width: 100%;
+  height: 39rem;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-black,
+      $color-black-light
+    ),
+    url('../img/hero__img.jpg');
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img__header {
+  margin-top: 3rem;
+  width: 40rem;
+  height: 20rem;
+}
+.scroll__btn {
+  margin-top: 3rem;
 }
