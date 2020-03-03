@@ -16,6 +16,11 @@ $color-red-light: #e55039;
   color: $color-red-light;
 }
 //the buttons
+a:hover,
+button:hover,
+.card:hover {
+  cursor: none;
+}
 .btn {
   padding: 1rem;
   cursor: pointer;
@@ -58,6 +63,7 @@ $color-red-light: #e55039;
   }
 }
 body {
+  cursor: none;
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
 
@@ -139,7 +145,6 @@ section.games__section {
 }
 .card {
   height: 25rem;
-  width: 100%;
   color: $color-black;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
@@ -169,7 +174,7 @@ section.games__section {
   }
   &__image {
     width: 100%;
-    height: 50%;
+    height: 60%;
     overflow: hidden;
 
     img {
@@ -188,4 +193,37 @@ section.games__section {
 }
 .wrapper {
   width: 100%;
+}
+
+//grid
+.grid-container {
+  width: 90%;
+  margin: 4rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/*_--------------------Third party plugins-------------------------*/
+#cursor {
+  border-radius: 1000px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(244, 67, 54, 1);
+  margin: -15px;
+  transition-duration: 150ms;
+  z-index: 10000;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pointer {
+  border-radius: 1000px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid rgba(244, 67, 54, 1);
+  margin: -5px;
+  z-index: 10001;
+  padding: 0;
+  box-sizing: border-box;
 }

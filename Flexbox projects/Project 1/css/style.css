@@ -3,6 +3,12 @@
   color: #e55039;
 }
 
+a:hover,
+button:hover,
+.card:hover {
+  cursor: none;
+}
+
 .btn {
   padding: 1rem;
   cursor: pointer;
@@ -55,6 +61,7 @@
 }
 
 body {
+  cursor: none;
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -158,7 +165,6 @@ section.games__section h1 {
 
 .card {
   height: 25rem;
-  width: 100%;
   color: #000;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -199,7 +205,7 @@ section.games__section h1 {
 
 .card__image {
   width: 100%;
-  height: 50%;
+  height: 60%;
   overflow: hidden;
 }
 
@@ -218,5 +224,42 @@ section.games__section h1 {
 
 .wrapper {
   width: 100%;
+}
+
+.grid-container {
+  width: 90%;
+  margin: 4rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/*_--------------------Third party plugins-------------------------*/
+#cursor {
+  border-radius: 1000px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f44336;
+  margin: -15px;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+  z-index: 10000;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#pointer {
+  border-radius: 1000px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #f44336;
+  margin: -5px;
+  z-index: 10001;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
