@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
+.heading__primary {
+  color: #e55039;
+}
+
 .btn {
   padding: 1rem;
   cursor: pointer;
@@ -140,5 +144,15 @@ body li {
 
 .scroll__btn {
   margin-top: 3rem;
+}
+
+section.games__section {
+  margin-top: 5rem;
+}
+
+section.games__section h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,12 @@ $color-green: #2ecc71;
 $color-green-dark: #009432;
 $color-primary-dark: rgba(9, 116, 165, 0.924);
 $color-primary: rgb(0, 174, 255);
+$color-red: #d63031;
+$color-red-light: #e55039;
+//heading
+.heading__primary {
+  color: $color-red-light;
+}
 //the buttons
 .btn {
   padding: 1rem;
@@ -120,4 +126,14 @@ body {
 }
 .scroll__btn {
   margin-top: 3rem;
+}
+//the games section
+section.games__section {
+  margin-top: 5rem;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 100;
+  }
 }
