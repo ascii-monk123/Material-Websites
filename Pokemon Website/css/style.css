@@ -12,25 +12,38 @@ span.background {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../images/hero-1.jpg");
 }
 
-.section__1 {
+.section__1, .section__7 {
   color: #fff;
 }
 
-.section__1 h1 {
+.section__1 h1, .section__7 h1 {
   color: #ffda79;
 }
 
-.section__1 p {
+.section__1 p, .section__7 p {
   font-size: 1.7rem;
 }
 
-.section__1 .button {
+.section__1 .button, .section__7 .button {
   color: #fff;
   text-shadow: none;
 }
 
-.section__2 p, .section__3 p {
+.section__2 p, .section__3 p, .section__6 p, .section__7 p {
   font-size: 1.5rem;
+}
+
+.section__6 a {
+  font-size: 1.5rem;
+}
+
+.section__7 {
+  color: #000;
+  text-align: center;
+}
+
+.center__text {
+  text-align: center;
 }
 
 @media (max-width: 400px) {

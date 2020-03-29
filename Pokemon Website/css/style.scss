@@ -15,7 +15,8 @@ span.background {
     url('../images/hero-1.jpg');
 }
 .section {
-  &__1 {
+  &__1,
+  &__7 {
     color: #fff;
     h1 {
       color: #ffda79;
@@ -30,13 +31,27 @@ span.background {
   }
 
   &__2,
-  &__3 {
+  &__3,
+  &__6,
+  &__7 {
     p {
       font-size: 1.5rem;
     }
   }
-}
 
+  &__6 {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+  &__7 {
+    color: #000;
+    text-align: center;
+  }
+}
+.center__text {
+  text-align: center;
+}
 @media (max-width: 400px) {
   .primary__header {
     font-size: 2.6rem;
