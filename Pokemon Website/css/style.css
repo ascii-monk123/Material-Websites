@@ -1,0 +1,45 @@
+body {
+  font-family: 'Montserrat';
+  font-size: 10px;
+}
+
+.primary__header {
+  font-size: 5rem;
+}
+
+span.background {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url("../images/hero-1.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../images/hero-1.jpg");
+}
+
+.section__1 {
+  color: #fff;
+}
+
+.section__1 h1 {
+  color: #ffda79;
+}
+
+.section__1 p {
+  font-size: 1.7rem;
+}
+
+.section__1 .button {
+  color: #fff;
+  text-shadow: none;
+}
+
+.section__2 p, .section__3 p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 400px) {
+  .primary__header {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .section__1 p {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
