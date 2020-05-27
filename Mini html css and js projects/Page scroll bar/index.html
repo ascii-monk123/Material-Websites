@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative page scroll progress bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="progressbar"></div>
+    <div id="scroll-path"></div>
+    <section>
+      <h2>Creative Progress Bar</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+        earum quas! Eos, velit sapiente sunt quia ad veniam pariatur accusamus.
+        Iste similique, eius, nihil aliquid, temporibus repellendus laudantium
+        ipsum modi maxime impedit ad optio nulla. Fugit saepe voluptatem totam
+        eveniet doloribus. Voluptate, vel. Consectetur id velit quibusdam
+        maiores sint suscipit, itaque laborum aliquid quod voluptatem facilis
+        harum quidem ab dolorum eaque molestias atque. Corporis laudantium
+        adipisci cumque accusantium sequi eos veniam, pariatur voluptas earum ab
+        fuga excepturi repellat aut aspernatur sit. Quia quae quaerat laborum
+        modi dolore est praesentium provident quis autem ex? Ad culpa ex aut
+        magni quae at nam doloremque, odit labore obcaecati, id illum
+        perferendis dolorem! Reprehenderit sapiente accusantium omnis
+        repellendus nostrum eius quisquam corporis accusamus inventore
+        aspernatur similique odio voluptatibus eveniet officiis voluptatem,
+        obcaecati repellat, explicabo provident earum? Laudantium explicabo
+        obcaecati eveniet dolorem non, facere similique, magnam repellat aut
+        totam, veniam expedita quidem? Ipsa temporibus nam ex? Reprehenderit
+        suscipit recusandae dolorum mollitia rem molestias, laboriosam amet. Cum
+        repudiandae voluptatum dolorem, quasi, reiciendis exercitationem
+        dignissimos id eum dolorum ipsum, nobis labore vel est similique
+        corporis animi at? Perspiciatis dolore quaerat, porro, ut, nihil facilis
+        molestiae debitis adipisci officia dolor doloremque quam ex laborum!
+        Consequuntur ipsum libero repellendus! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quibusdam, earum quas! Eos, velit sapiente
+        sunt quia ad veniam pariatur accusamus. Iste similique, eius, nihil
+        aliquid, temporibus repellendus laudantium ipsum modi maxime impedit ad
+        optio nulla. Fugit saepe voluptatem totam eveniet doloribus. Voluptate,
+        vel. Consectetur id velit quibusdam maiores sint suscipit, itaque
+        laborum aliquid quod voluptatem facilis harum quidem ab dolorum eaque
+        molestias atque. Corporis laudantium adipisci cumque accusantium sequi
+        eos veniam, pariatur voluptas earum ab fuga excepturi repellat aut
+        aspernatur sit. Quia quae quaerat laborum modi dolore est praesentium
+        provident quis autem ex? Ad culpa ex aut magni quae at nam doloremque,
+        odit labore obcaecati, id illum perferendis dolorem! Reprehenderit
+        sapiente accusantium omnis repellendus nostrum eius quisquam corporis
+        accusamus inventore aspernatur similique odio voluptatibus eveniet
+        officiis voluptatem, obcaecati repellat, explicabo provident earum?
+        Laudantium explicabo obcaecati eveniet dolorem non, facere similique,
+        magnam repellat aut totam, veniam expedita quidem? Ipsa temporibus nam
+        ex? Reprehenderit suscipit recusandae dolorum mollitia rem molestias,
+        laboriosam amet. Cum repudiandae voluptatum dolorem, quasi, reiciendis
+        exercitationem dignissimos id eum dolorum ipsum, nobis labore vel est
+        similique corporis animi at? Perspiciatis dolore quaerat, porro, ut,
+        nihil facilis molestiae debitis adipisci officia dolor doloremque quam
+        ex laborum! Consequuntur ipsum libero repellendus! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Quibusdam, earum quas! Eos, velit
+        sapiente sunt quia ad veniam pariatur accusamus. Iste similique, eius,
+        nihil aliquid, temporibus repellendus laudantium ipsum modi maxime
+        impedit ad optio nulla. Fugit saepe voluptatem totam eveniet doloribus.
+        Voluptate, vel. Consectetur id velit quibusdam maiores sint suscipit,
+        itaque laborum aliquid quod voluptatem facilis harum quidem ab dolorum
+        eaque molestias atque. Corporis laudantium adipisci cumque accusantium
+        sequi eos veniam, pariatur voluptas earum ab fuga excepturi repellat aut
+        aspernatur sit. Quia quae quaerat laborum modi dolore est praesentium
+        provident quis autem ex? Ad culpa ex aut magni quae at nam doloremque,
+        odit labore obcaecati, id illum perferendis dolorem! Reprehenderit
+        sapiente accusantium omnis repellendus nostrum eius quisquam corporis
+        accusamus inventore aspernatur similique odio voluptatibus eveniet
+        officiis voluptatem, obcaecati repellat, explicabo provident earum?
+        Laudantium explicabo obcaecati eveniet dolorem non, facere similique,
+        magnam repellat aut totam, veniam expedita quidem? Ipsa temporibus nam
+        ex? Reprehenderit suscipit recusandae dolorum mollitia rem molestias,
+        laboriosam amet. Cum repudiandae voluptatum dolorem, quasi, reiciendis
+        exercitationem dignissimos id eum dolorum ipsum, nobis labore vel est
+        similique corporis animi at? Perspiciatis dolore quaerat, porro, ut,
+        nihil facilis molestiae debitis adipisci officia dolor doloremque quam
+        ex laborum! Consequuntur ipsum libero repellendus!
+      </p>
+    </section>
+    <script>
+      let progress = document.getElementById('progressbar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + '%';
+      };
+    </script>
+  </body>
+</html>
